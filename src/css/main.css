@@ -1,0 +1,35 @@
+:root {
+  --sun: #FFB830;
+  --sky: #3AABDB;
+  --leaf: #4DBD74;
+  --earth: #C25B2A;
+  --coral: #FF6B6B;
+  --sand: #FFF3D6;
+  --deep: #1A2744;
+  --cloud: #F0EDE4;
+  --muted: #6B7BA4;
+  --shadow: 0 4px 24px rgba(26, 39, 68, 0.10);
+  --radius: 18px;
+  /* VN colors — Medieval Theme */
+  --vn-bg: #0a0f1e;
+  --vn-box: rgba(20, 15, 10, 0.94);
+  --vn-border: rgba(180, 140, 80, 0.3);
+  --vn-text: #e8e0d0;
+  --vn-name: #FFB830;
+  --vn-gold: #FFD700;
+  --vn-parchment: rgba(180, 150, 100, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--cloud);
+  color: var(--deep);
+  min-height: 100vh;
+  overflow-x: hidden;
+}

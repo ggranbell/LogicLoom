@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LogicLoom - Gamified Learning</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Cinzel:wght@400;600;700;800;900&family=Nunito:wght@400;600;700;800&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo"><div class="logo-icon">🌿</div>LogicLoom</div>
+  <div class="nav-tabs">
+    <button class="nav-tab active" data-target="student">🎮 Student</button>
+    <button class="nav-tab" data-target="teacher">📊 Teacher</button>
+    <button class="nav-tab" data-target="profile">👤 Profile</button>
+  </div>
+  <div class="nav-right">
+    <div class="streak-badge">🔥 12</div>
+    <div class="nav-avatar" title="View Profile">MR</div>
+  </div>
+</nav>
+
+<!-- ═══════════════ STUDENT VIEW ═══════════════ -->
+<div id="studentView" class="view active">
+  <div class="student-hero">
+    <div class="hero-stars"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-greeting">Maligayang pagdating</div>
+        <div class="hero-name">Kumusta, <span>Miguel!</span></div>
+        <div class="hero-desc">Ang iyong pakikipagsapalaran sa Lupa ng mga Kwento ay naghihintay. Patuloy na maglaro at matuto!</div>
+        <div class="hero-stats">
+          <div class="hero-stat"><div class="hero-stat-val">68%</div><div class="hero-stat-label">Accuracy</div></div>
+          <div class="hero-stat"><div class="hero-stat-val">4/7</div><div class="hero-stat-label">Chapters</div></div>
+          <div class="hero-stat"><div class="hero-stat-val">1,240</div><div class="hero-stat-label">Stars</div></div>
+        </div>
+      </div>
+      <div class="hero-character">
+        <svg class="character-art" viewBox="0 0 190 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="95" cy="212" rx="42" ry="8" fill="rgba(0,0,0,0.18)"/>
+          <rect x="62" y="95" width="28" height="36" rx="8" fill="#C25B2A"/>
+          <rect x="65" y="98" width="22" height="28" rx="6" fill="#E07540"/>
+          <circle cx="76" cy="112" r="4" fill="#C25B2A"/>
+          <rect x="58" y="94" width="54" height="52" rx="12" fill="#3AABDB"/>
+          <rect x="60" y="138" width="22" height="32" rx="8" fill="#1A3A6B"/>
+          <rect x="80" y="138" width="22" height="32" rx="8" fill="#1A3A6B"/>
+          <rect x="65" y="165" width="14" height="28" rx="7" fill="#C8895C"/>
+          <rect x="83" y="165" width="14" height="28" rx="7" fill="#C8895C"/>
+          <ellipse cx="72" cy="193" rx="13" ry="7" fill="#1A2744"/>
+          <ellipse cx="90" cy="193" rx="13" ry="7" fill="#1A2744"/>
+          <rect x="32" y="96" width="28" height="14" rx="7" fill="#C8895C" transform="rotate(-15 32 96)"/>
+          <rect x="108" y="90" width="28" height="14" rx="7" fill="#C8895C" transform="rotate(20 108 90)"/>
+          <rect x="26" y="112" width="20" height="24" rx="4" fill="#FFB830"/>
+          <rect x="29" y="115" width="14" height="3" rx="1.5" fill="rgba(0,0,0,0.2)"/>
+          <rect x="29" y="120" width="14" height="3" rx="1.5" fill="rgba(0,0,0,0.2)"/>
+          <rect x="29" y="125" width="10" height="3" rx="1.5" fill="rgba(0,0,0,0.2)"/>
+          <circle cx="85" cy="72" r="32" fill="#C8895C"/>
+          <ellipse cx="85" cy="46" rx="28" ry="16" fill="#2C1A0E"/>
+          <rect x="57" y="50" width="10" height="18" rx="5" fill="#2C1A0E"/>
+          <rect x="98" y="50" width="10" height="18" rx="5" fill="#2C1A0E"/>
+          <circle cx="74" cy="72" r="5" fill="white"/><circle cx="96" cy="72" r="5" fill="white"/>
+          <circle cx="75" cy="73" r="3" fill="#2C1A0E"/><circle cx="97" cy="73" r="3" fill="#2C1A0E"/>
+          <circle cx="76" cy="71.5" r="1" fill="white"/><circle cx="98" cy="71.5" r="1" fill="white"/>
+          <path d="M76 82 Q85 90 94 82" stroke="#2C1A0E" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <circle cx="66" cy="78" r="6" fill="rgba(255,120,100,0.25)"/>
+          <circle cx="104" cy="78" r="6" fill="rgba(255,120,100,0.25)"/>
+          <path d="M72 96 L85 106 L98 96" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" fill="none"/>
+          <text x="120" y="60" font-size="14" fill="#FFB830" opacity="0.7">⭐</text>
+          <text x="140" y="85" font-size="10" fill="#FFB830" opacity="0.5">✨</text>
+          <text x="35" y="78" font-size="12" fill="#4DBD74" opacity="0.6">💚</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAP -->
+  <div class="section">
+    <div class="section-title">🗺️ Adventure Map</div>
+    <div class="adventure-map">
+      <div class="map-path">
+        <div class="chapter-node"><div class="chapter-circle chapter-done">✓</div><div class="chapter-label">Prologue</div><div class="chapter-stars">⭐⭐⭐</div></div>
+        <div class="chapter-connector connector-done"></div>
+        <div class="chapter-node"><div class="chapter-circle chapter-done">✓</div><div class="chapter-label">River Crossing</div><div class="chapter-stars">⭐⭐⭐</div></div>
+        <div class="chapter-connector connector-done"></div>
+        <div class="chapter-node"><div class="chapter-circle chapter-done">✓</div><div class="chapter-label">Cave of Numbers</div><div class="chapter-stars">⭐⭐☆</div></div>
+        <div class="chapter-connector connector-done"></div>
+        <div class="chapter-node"><div class="chapter-circle chapter-active play-btn">4</div><div class="chapter-label current">The Prince & Flame ▶</div><div class="chapter-stars">☆☆☆</div></div>
+        <div class="chapter-connector connector-active"></div>
+        <div class="chapter-node"><div class="chapter-circle chapter-locked">🔒</div><div class="chapter-label">Sky Kingdom</div><div class="chapter-stars">☆☆☆</div></div>
+        <div class="chapter-connector connector-locked"></div>
+        <div class="chapter-node"><div class="chapter-circle chapter-locked">🔒</div><div class="chapter-label">Final Loom</div><div class="chapter-stars">☆☆☆</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUESTS -->
+  <div class="section" style="padding-top:0">
+    <div class="section-title">⚔️ Current Quests</div>
+    <div class="quests-grid">
+      <div class="quest-card play-btn">
+        <div class="quest-tag">📖 Reading Comprehension & Math</div>
+        <div class="quest-title">The Prince and the Eternal Flame</div>
+        <div class="quest-desc">Solve the challenges set by Keeper Brutus at Mount Ignis to retrieve the flame and save the king!</div>
+        <div class="quest-progress-bar"><div class="quest-progress-fill" style="width:20%"></div></div>
+        <div class="quest-meta"><span>1 of 5 puzzles solved</span><span style="color:var(--leaf);font-weight:800">20%</span></div>
+        <button class="play-btn">▶ Play Visual Novel</button>
+      </div>
+      <div class="quest-card numeracy">
+        <div class="quest-tag green">🔢 Numeracy Challenge</div>
+        <div class="quest-title">Market Day in Burnham</div>
+        <div class="quest-desc">Help Aling Rosa budget for the town fiesta. You have ₱250 — how many lanterns can you buy if each costs ₱35?</div>
+        <div class="quest-progress-bar"><div class="quest-progress-fill green" style="width:40%"></div></div>
+        <div class="quest-meta"><span>2 of 5 puzzles solved</span><span style="color:var(--leaf);font-weight:800">40%</span></div>
+        <button class="play-btn green">▶ Start Challenge</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section" style="padding-top:0">
+    <div class="section-title">📈 Your Skills</div>
+    <div class="skills-grid">
+      <div class="skill-card"><div class="skill-icon" style="background:rgba(58,171,219,.12)">📖</div><div class="skill-name">Main Idea</div><div class="skill-level">Level 3 · Developing</div><div class="skill-bar"><div class="skill-bar-fill" style="width:65%;background:var(--sky)"></div></div></div>
+      <div class="skill-card"><div class="skill-icon" style="background:rgba(255,184,48,.12)">📝</div><div class="skill-name">Vocabulary</div><div class="skill-level">Level 2 · Beginner</div><div class="skill-bar"><div class="skill-bar-fill" style="width:38%;background:var(--sun)"></div></div></div>
+      <div class="skill-card"><div class="skill-icon" style="background:rgba(77,189,116,.12)">🔢</div><div class="skill-name">Arithmetic</div><div class="skill-level">Level 4 · Proficient</div><div class="skill-bar"><div class="skill-bar-fill" style="width:80%;background:var(--leaf)"></div></div></div>
+      <div class="skill-card"><div class="skill-icon" style="background:rgba(255,107,107,.12)">🔍</div><div class="skill-name">Inference</div><div class="skill-level">Level 2 · Beginner</div><div class="skill-bar"><div class="skill-bar-fill" style="width:30%;background:var(--coral)"></div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ PROFILE VIEW ═══════════════ -->
+<div id="profileView" class="view">
+  <div class="profile-hero">
+    <div class="profile-hero-inner">
+      <div class="profile-avatar-ring">
+        <div class="profile-avatar-inner">🧒</div>
+      </div>
+      <div class="profile-info">
+        <div class="profile-name">Miguel A. Reyes</div>
+        <div class="profile-school">🏫 Mabini Elementary School · Grade 4 — Rizal Section</div>
+        <div class="profile-badges">
+          <div class="badge gold">🏆 Top Reader</div>
+          <div class="badge">🔥 12-Day Streak</div>
+          <div class="badge">⭐ 1,240 Stars</div>
+          <div class="badge">📖 Chapter 4</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="profile-body">
+    <div class="profile-grid">
+      <div class="profile-card">
+        <div class="profile-card-title">📅 Activity — Last 8 Weeks</div>
+        <div class="heatmap" id="heatmap"></div>
+        <div style="display:flex;align-items:center;gap:8px;margin-top:12px;font-size:.72rem;color:var(--muted);font-weight:600;">
+          Less <div class="hmap-cell h0" style="width:13px;height:13px"></div><div class="hmap-cell h4" style="width:13px;height:13px"></div> More
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ TEACHER VIEW ═══════════════ -->
+<div id="teacherView" class="view">
+  <div class="teacher-header">
+    <div class="teacher-title-row">
+      <div>
+        <div class="teacher-title">Grade 4 — <span>Rizal Section</span></div>
+        <div class="teacher-subtitle">Teacher: Ms. Reyes · SY 2025–2026 · 28 students enrolled</div>
+      </div>
+      <div class="teacher-btns">
+        <button class="outline-btn">🔍 Filter</button>
+        <button class="export-btn" onclick="openCSVModal()">⬇ Export CSV</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert-banner-wrap">
+    <div class="alert-banner">
+      <span style="font-size:1.1rem">⚠️</span>
+      <div class="alert-text"><strong>3 students</strong> have failed the same reading puzzle (Ch.4 Gate 2) more than 3 times. Targeted intervention recommended.</div>
+      <div class="alert-link" onclick="openCSVModal()">Export Report →</div>
+    </div>
+  </div>
+
+  <div class="metrics-grid">
+    <div class="metric-card blue"><div class="metric-icon" style="background:rgba(58,171,219,.12)">👥</div><div class="metric-val">24</div><div class="metric-label">Active Students</div><div class="metric-change change-up">↑ 2 from last week</div></div>
+    <div class="metric-card green"><div class="metric-icon" style="background:rgba(77,189,116,.12)">✅</div><div class="metric-val">72%</div><div class="metric-label">Avg. Accuracy</div><div class="metric-change change-up">↑ 5% improvement</div></div>
+    <div class="metric-card orange"><div class="metric-icon" style="background:rgba(255,184,48,.12)">📖</div><div class="metric-val">4.1</div><div class="metric-label">Avg. Chapter</div><div class="metric-change change-up">↑ 0.4 this week</div></div>
+    <div class="metric-card red"><div class="metric-icon" style="background:rgba(255,107,107,.12)">🚩</div><div class="metric-val">3</div><div class="metric-label">Needs Attention</div><div class="metric-change change-down">↑ 1 new flag</div></div>
+  </div>
+
+  <div class="dashboard-grid">
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-title">🧑‍🎓 Student Roster</div>
+        <button class="filter-pill">Filter ▾</button>
+      </div>
+      <table class="roster-table">
+        <thead><tr><th>Student</th><th>Status</th><th>Chapter</th><th>Accuracy</th><th>Flags</th></tr></thead>
+        <tbody>
+          <tr><td><div class="student-name-cell"><div class="stu-avatar" style="background:linear-gradient(135deg,#3AABDB,#2E86C1)">AG</div><div><div class="stu-name">Amara Garcia</div><div class="stu-grade">Grade 4</div></div></div></td><td><span class="status-badge status-active">● Active</span></td><td>Ch. 5</td><td><span class="acc-bar"><span class="acc-fill acc-high" style="width:88%"></span></span>88%</td><td>—</td></tr>
+          <tr><td><div class="student-name-cell"><div class="stu-avatar" style="background:linear-gradient(135deg,#FF6B6B,#C0392B)">BR</div><div><div class="stu-name">Berto Reyes</div><div class="stu-grade">Grade 4</div></div></div></td><td><span class="status-badge status-struggling">⚠ Struggling</span></td><td>Ch. 3</td><td><span class="acc-bar"><span class="acc-fill acc-low" style="width:41%"></span></span>41%</td><td><span class="flag-icon">🚩 ×3</span></td></tr>
+          <tr><td><div class="student-name-cell"><div class="stu-avatar" style="background:linear-gradient(135deg,#4DBD74,#1E8449)">CM</div><div><div class="stu-name">Clara Mendoza</div><div class="stu-grade">Grade 4</div></div></div></td><td><span class="status-badge status-done">✓ Completed</span></td><td>Ch. 7</td><td><span class="acc-bar"><span class="acc-fill acc-high" style="width:95%"></span></span>95%</td><td>—</td></tr>
+          <tr><td><div class="student-name-cell"><div class="stu-avatar" style="background:linear-gradient(135deg,#FFB830,#E67E22)">DP</div><div><div class="stu-name">Diego Pineda</div><div class="stu-grade">Grade 4</div></div></div></td><td><span class="status-badge status-struggling">⚠ Struggling</span></td><td>Ch. 4</td><td><span class="acc-bar"><span class="acc-fill acc-mid" style="width:54%"></span></span>54%</td><td><span class="flag-icon">🚩 ×4</span></td></tr>
+          <tr><td><div class="student-name-cell"><div class="stu-avatar" style="background:linear-gradient(135deg,#9B59B6,#6C3483)">ES</div><div><div class="stu-name">Ella Santos</div><div class="stu-grade">Grade 4</div></div></div></td><td><span class="status-badge status-active">● Active</span></td><td>Ch. 5</td><td><span class="acc-bar"><span class="acc-fill acc-high" style="width:78%"></span></span>78%</td><td>—</td></tr>
+          <tr><td><div class="student-name-cell"><div class="stu-avatar" style="background:linear-gradient(135deg,#1ABC9C,#148F77)">FD</div><div><div class="stu-name">Felix dela Cruz</div><div class="stu-grade">Grade 4</div></div></div></td><td><span class="status-badge status-idle">– Idle</span></td><td>Ch. 3</td><td><span class="acc-bar"><span class="acc-fill acc-mid" style="width:62%"></span></span>62%</td><td>—</td></tr>
+          <tr><td><div class="student-name-cell"><div class="stu-avatar" style="background:linear-gradient(135deg,#E74C3C,#922B21)">GT</div><div><div class="stu-name">Gia Torres</div><div class="stu-grade">Grade 4</div></div></div></td><td><span class="status-badge status-struggling">⚠ Struggling</span></td><td>Ch. 2</td><td><span class="acc-bar"><span class="acc-fill acc-low" style="width:35%"></span></span>35%</td><td><span class="flag-icon">🚩 ×5</span></td></tr>
+          <tr><td><div class="student-name-cell"><div class="stu-avatar" style="background:linear-gradient(135deg,#2980B9,#1A5276)">HL</div><div><div class="stu-name">Hiro Lim</div><div class="stu-grade">Grade 4</div></div></div></td><td><span class="status-badge status-active">● Active</span></td><td>Ch. 6</td><td><span class="acc-bar"><span class="acc-fill acc-high" style="width:82%"></span></span>82%</td><td>—</td></tr>
+        </tbody>
+      </table>
+      <div style="padding:12px 16px;border-top:1px solid rgba(107,123,164,.08);font-size:.78rem;color:var(--muted);font-weight:600;display:flex;justify-content:space-between;align-items:center">
+        <span>Showing 8 of 28 students</span>
+        <div style="display:flex;gap:6px"><button class="filter-pill">← Prev</button><button class="filter-pill" style="background:var(--deep);color:white">Next →</button></div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:18px">
+      <div class="panel">
+        <div class="panel-header"><div class="panel-title">📊 Error Patterns</div><button class="filter-pill">This Week</button></div>
+        <div class="chart-container">
+          <div style="font-size:.72rem;color:var(--muted);font-weight:600;margin-bottom:7px">COMMON ERRORS (# students)</div>
+          <div class="bar-chart">
+            <div class="bar-wrap"><div class="bar" style="height:70%;background:linear-gradient(to top,var(--coral),rgba(255,107,107,.5))"><div class="bar-val">12</div></div><div class="bar-label">Vocab</div></div>
+            <div class="bar-wrap"><div class="bar" style="height:85%;background:linear-gradient(to top,#E67E22,rgba(255,184,48,.5))"><div class="bar-val">15</div></div><div class="bar-label">Main Idea</div></div>
+            <div class="bar-wrap"><div class="bar" style="height:40%;background:linear-gradient(to top,var(--sky),rgba(58,171,219,.4))"><div class="bar-val">7</div></div><div class="bar-label">Inference</div></div>
+            <div class="bar-wrap"><div class="bar" style="height:25%;background:linear-gradient(to top,var(--leaf),rgba(77,189,116,.4))"><div class="bar-val">4</div></div><div class="bar-label">Math</div></div>
+            <div class="bar-wrap"><div class="bar" style="height:55%;background:linear-gradient(to top,#9B59B6,rgba(155,89,182,.4))"><div class="bar-val">10</div></div><div class="bar-label">Sequence</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-header"><div class="panel-title">🔍 Bottleneck Alerts</div><span style="font-size:.72rem;color:var(--coral);font-weight:700;background:rgba(255,107,107,.1);padding:2px 8px;border-radius:20px">3 urgent</span></div>
+        <div class="bottleneck-list">
+          <div class="bottleneck-item urgent"><div class="bottleneck-dot dot-urgent"></div><div><div class="bottleneck-title">Ch.4 Gate 2 — Main Idea</div><div class="bottleneck-meta">3 students failed 3+ times</div></div><div class="bottleneck-count">3×</div></div>
+          <div class="bottleneck-item urgent"><div class="bottleneck-dot dot-urgent"></div><div><div class="bottleneck-title">Vocabulary — Unfamiliar Words</div><div class="bottleneck-meta">12 students in Ch. 3–4</div></div><div class="bottleneck-count">12</div></div>
+          <div class="bottleneck-item"><div class="bottleneck-dot dot-warn"></div><div><div class="bottleneck-title">Sequence of Events Puzzle</div><div class="bottleneck-meta">10 students below 60%</div></div><div class="bottleneck-count warn">10</div></div>
+          <div class="bottleneck-item"><div class="bottleneck-dot dot-ok"></div><div><div class="bottleneck-title">Arithmetic — Basic Ops</div><div class="bottleneck-meta">4 students, low severity</div></div><div class="bottleneck-count warn">4</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     VISUAL NOVEL OVERLAY
+════════════════════════════════════════════════ -->
+<div class="vn-overlay" id="vnOverlay">
+  <div class="vn-scene">
+    <!-- Background layers -->
+    <div class="vn-bg-art"></div>
+    <div class="vn-bg-image" id="vnBgImage"></div>
+    <div class="vn-bg-overlay"></div>
+    <div class="vn-stars-field" id="starsField"></div>
+    <div class="vn-particles" id="vnParticles"></div>
+
+    <!-- Top bar -->
+    <div class="vn-topbar">
+      <div class="vn-topbar-left">
+        <div class="vn-chapter-label" id="vnChapterLabel">📜 The Prince and the Eternal Flame</div>
+        <div class="vn-progress-wrap">
+          <div class="vn-progress-bar"><div class="vn-progress-fill" id="vnProgressFill"></div></div>
+          <span class="vn-progress-label" id="vnProgressLabel">0%</span>
+        </div>
+      </div>
+      <div class="vn-controls">
+        <div class="vn-star-badge" id="vnStarBadge">⭐ <span id="vnStarCount">0</span></div>
+        <button class="tts-btn" id="ttsBtn">🔊 Read Aloud</button>
+        <button class="vn-ctrl-btn" onclick="resetVnProgress()">🔄 Reset</button>
+        <button class="vn-ctrl-btn vn-exit-btn" onclick="closeVN()">✕ Exit</button>
+      </div>
+    </div>
+
+    <!-- Character portrait slots -->
+    <div class="vn-portraits">
+      <div class="vn-char-slot" id="vnCharLeft"></div>
+      <div class="vn-char-slot" id="vnCharCenter"></div>
+      <div class="vn-char-slot" id="vnCharRight"></div>
+    </div>
+
+    <!-- Dialogue area -->
+    <div class="vn-dialogue-area" id="vnDialogueArea">
+      <div id="vnDynamicStage">
+        <div class="vn-skill-label" id="vnSkillLabel" style="display:none"></div>
+        <div class="vn-namebox" id="vnNamebox">Narrator</div>
+        <div class="vn-textbox">
+          <div class="vn-text" id="vnText">Loading...</div>
+          <div class="vn-choices" id="vnChoicesArea" style="display:none"></div>
+          <div class="vn-next-row">
+            <button class="vn-next-btn" id="vnNextBtn" onclick="vnNext()">Next ▶</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Star reward popup -->
+    <div class="vn-reward-popup" id="vnRewardPopup">
+      <div class="reward-stars">⭐⭐⭐</div>
+      <div class="reward-msg">Perfect!</div>
+    </div>
+
+    <!-- Ending screen -->
+    <div class="vn-ending-screen" id="vnEndingScreen">
+      <div class="ending-content">
+        <div class="ending-icon">🔥</div>
+        <h2 class="ending-title">Quest Complete!</h2>
+        <p class="ending-subtitle">The Prince and the Eternal Flame</p>
+        <div class="ending-stats">
+          <div class="ending-stat">
+            <div class="ending-stat-val"><span class="ending-total-stars">0</span> / <span class="ending-max-stars">33</span></div>
+            <div class="ending-stat-label">⭐ Stars Earned</div>
+          </div>
+          <div class="ending-stat">
+            <div class="ending-stat-val ending-puzzles">0/11</div>
+            <div class="ending-stat-label">🧩 Puzzles Solved</div>
+          </div>
+        </div>
+        <div style="display:flex; gap:16px; justify-content:center; margin-top:20px;">
+          <button class="vn-ending-close" onclick="resetVnProgress()">🔄 Play Again</button>
+          <button class="vn-ending-close" onclick="closeVN()">🏰 Return to Map</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- CSV EXPORT MODAL -->
+<div class="modal-overlay" id="csvModal">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div class="modal-title">⬇ Export Class Data</div>
+      <button class="modal-close">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="export-option selected" id="opt1">
+        <div class="option-check">✓</div>
+        <div class="option-icon">👥</div>
+        <div><div class="option-label">Student Progress Report</div></div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <div class="download-progress" id="dlProgress"><span class="spin">⏳</span> Generating CSV...</div>
+      <div class="modal-note" id="modalNote">1 report selected</div>
+      <div style="display:flex;gap:10px">
+        <button class="btn-secondary">Cancel</button>
+        <button class="btn-primary">⬇ Download CSV</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

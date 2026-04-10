@@ -1,0 +1,2009 @@
+{
+  "title": "The Prince and the Eternal Flame",
+  "characters": {
+    "Caelum": {
+      "name": "Prince Caelum",
+      "color": "#FFD700",
+      "portrait": "/assets/Caelum.png",
+      "faces": "right"
+    },
+    "Rex": {
+      "name": "Rex",
+      "color": "#FFA500",
+      "portrait": "/assets/Rex.png",
+      "faces": "right"
+    },
+    "Aldric": {
+      "name": "King Aldric",
+      "color": "#87CEEB",
+      "portrait": "/assets/King Aldric.png",
+      "faces": "right"
+    },
+    "Maren": {
+      "name": "Advisor Maren",
+      "color": "#9B9BB0",
+      "portrait": "/assets/Advisor Maren.png",
+      "faces": "right"
+    },
+    "Brutus": {
+      "name": "Keeper Brutus",
+      "color": "#AA4444",
+      "portrait": "/assets/Keeper Brutus.png",
+      "faces": "left"
+    },
+    "Phoenix": {
+      "name": "The Phoenix",
+      "color": "#FF4500",
+      "portrait": "/assets/Phoenix.png",
+      "faces": "left"
+    }
+  },
+  "scenes": [
+    {
+      "id": "prologue_1",
+      "chapter": "📜 Prologue — The King's Sorrow",
+      "background": "/assets/Solvane Castle.png",
+      "mood": "frost",
+      "characters": [
+        "Rex"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "The scene opens in the grand royal chamber. The once-warm and golden halls of the kingdom of Solvane are now draped in cold shadows. Frost creeps along the stone walls."
+        },
+        {
+          "speaker": null,
+          "text": "The fireplace crackles weakly, unable to fight the supernatural chill that has gripped the king for seven days."
+        },
+        {
+          "speaker": null,
+          "text": "Down the hallway, curled in front of the prince's bedroom door, Rex lies with his chin flat on the floor and his brows furrowed deeply."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Mrrrrrrhhh...\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "It is not quite a whine. Not quite a groan. It is the sound of a dog who is very worried and has absolutely no idea how to fix it."
+        }
+      ],
+      "next": "prologue_2"
+    },
+    {
+      "id": "prologue_2",
+      "chapter": "📜 Prologue — The King's Sorrow",
+      "background": "/assets/Solvane Castle.png",
+      "mood": "frost",
+      "characters": [
+        "Aldric",
+        "Maren"
+      ],
+      "dialogues": [
+        {
+          "speaker": "Maren",
+          "text": "Your Majesty... the royal healers have tried every remedy known to our land. Herbs, potions, warm springs... nothing works. The frost inside you is unlike any illness we have seen."
+        },
+        {
+          "speaker": "Aldric",
+          "text": "Maren... I can feel the cold eating at my very soul. It is not a fever of the body... it is something deeper."
+        },
+        {
+          "speaker": null,
+          "text": "He coughs, and for a brief moment, tiny ice crystals form in the air."
+        },
+        {
+          "speaker": "Maren",
+          "text": "The ancient texts... Your Majesty, I found something last night while searching the royal archives."
+        },
+        {
+          "speaker": null,
+          "text": "Maren unrolls a worn, golden-edged scroll. The writing glows faintly as it is read aloud."
+        },
+        {
+          "speaker": "Maren",
+          "text": "\"When the cold of shadow claims the heart of a king, no earthly fire shall break its hold. Only the breath of the Eternal Flame — the Phoenix of Mount Ignis — carries warmth pure enough to melt what no healer can cure.\""
+        }
+      ],
+      "next": "prologue_3"
+    },
+    {
+      "id": "prologue_3",
+      "chapter": "📜 Prologue — The King's Sorrow",
+      "background": "/assets/Solvane Castle.png",
+      "mood": "frost",
+      "characters": [
+        "Aldric"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "Silence fills the room."
+        },
+        {
+          "speaker": "Aldric",
+          "text": "Send for my son... Send for Prince Caelum."
+        }
+      ],
+      "next": "prologue_4"
+    },
+    {
+      "id": "prologue_4",
+      "chapter": "📜 Prologue — The King's Sorrow",
+      "background": "/assets/Solvane Castle.png",
+      "mood": "frost",
+      "characters": [
+        "Caelum",
+        "Rex"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "The great doors swing open. Prince Caelum strides in — and the moment he appears, Rex is on his feet."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Woof! Woof!\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "He bounds down the hallway and plants both front paws on Caelum's chest before the prince even makes it three steps through the door."
+        },
+        {
+          "speaker": "Caelum",
+          "text": "Rex — Rex, easy! I know, I know—"
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Woof woof WOOF—\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Urgent. Insistent. Spinning in a tight circle and pointing his nose toward the king's chamber as if to say: SOMETHING IS WRONG IN THERE AND I HAVE BEEN TRYING TO TELL EVERYONE FOR THREE DAYS."
+        },
+        {
+          "speaker": "Caelum",
+          "text": "I know, boy. I know."
+        },
+        {
+          "speaker": "Caelum",
+          "text": "Let's go see him together."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...Wff.\" 🐾"
+        }
+      ],
+      "next": "prologue_5"
+    },
+    {
+      "id": "prologue_5",
+      "chapter": "📜 Prologue — The King's Sorrow",
+      "background": "/assets/Solvane Castle.png",
+      "mood": "frost",
+      "characters": [
+        "Aldric",
+        "Caelum"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "Rex immediately approaches the king's bedside. He rests his chin on the edge of the mattress and looks up at King Aldric's pale face. His tail does not wag."
+        },
+        {
+          "speaker": "Aldric",
+          "text": "Good boy, Rex... always the first to care."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...mmmhh.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "The sound of a dog who loves someone very much and is trying his hardest not to show how scared he is."
+        },
+        {
+          "speaker": "Aldric",
+          "text": "Caelum, my boy... I need you to be brave. Braver than you have ever been."
+        },
+        {
+          "speaker": "Caelum",
+          "text": "Anything, Father. Tell me what to do."
+        },
+        {
+          "speaker": "Aldric",
+          "text": "Find the Phoenix of Mount Ignis. Bring back its warmth... and save your old father from this endless winter inside him."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Woof?\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "A single curious, alert bark. Translation: \"Are we going somewhere?\""
+        },
+        {
+          "speaker": "Aldric",
+          "text": "Go, son... and take Rex with you. You will need a good heart beside you on this road."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Woof. Woof woof.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Translation: \"Understood. I will go. I am ready. Also I will need snacks for the road but we can discuss that later.\""
+        }
+      ],
+      "next": "prologue_6"
+    },
+    {
+      "id": "prologue_6",
+      "chapter": "📜 Prologue — The King's Sorrow",
+      "background": "/assets/Solvane Castle.png",
+      "mood": "frost",
+      "characters": [
+        "Caelum",
+        "Rex"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "The next morning, as a pale winter sun rises over Solvane, Prince Caelum stands at the castle gates. He carries a leather satchel, a compass, and the royal map."
+        },
+        {
+          "speaker": null,
+          "text": "Rex is already at the gate. He got there first. He has been sitting there since before sunrise, staring down the road with the focused energy of a dog who has decided that today is extremely important."
+        },
+        {
+          "speaker": "Caelum",
+          "text": "You've been here the whole time, haven't you?"
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"WOOF.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Definitive. Confident. Absolutely yes."
+        },
+        {
+          "speaker": "Caelum",
+          "text": "Just you and me, Rex. Think we can do this?"
+        },
+        {
+          "speaker": null,
+          "text": "Rex turns and licks his face with full commitment — one long, enthusiastic sweep from chin to forehead."
+        },
+        {
+          "speaker": "Caelum",
+          "text": "I'll take that as a yes."
+        },
+        {
+          "speaker": "Caelum",
+          "text": "First stop — the village of Numeria. Advisor Maren said the road to Mount Ignis passes through it. Let's go, boy."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Woof woof!\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "And just like that — with a prince, a golden dog, and a great deal of love fueling their steps — they set off into the world."
+        }
+      ],
+      "next": "act1_intro"
+    },
+    {
+      "id": "act1_intro",
+      "chapter": "🏘️ Act One — The Village of Numeria",
+      "background": "/assets/Village of Numeria.png",
+      "mood": "warm",
+      "characters": [
+        "Caelum",
+        "Rex"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "After half a day's journey through winding roads and golden meadows now dusted with unusual frost, the two travelers arrive at the village of Numeria."
+        },
+        {
+          "speaker": null,
+          "text": "Rex has been excellent company on the road. He has chased exactly four birds (none caught), investigated seventeen interesting smells, and barked at a particularly suspicious-looking fence post for a full minute."
+        },
+        {
+          "speaker": null,
+          "text": "But now, as they enter the village and find it in complete chaos — stalls overturned, villagers arguing, children looking frightened — Rex's playful energy vanishes instantly."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Grrrr...ff.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Low. Alert. Not aggressive — just switched fully on. Something is wrong here."
+        }
+      ],
+      "next": "act1_tilda"
+    },
+    {
+      "id": "act1_tilda",
+      "chapter": "🏘️ Act One — The Village of Numeria",
+      "background": "/assets/Village of Numeria.png",
+      "mood": "warm",
+      "characters": [
+        "Caelum",
+        "Rex"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "An elderly woman rushes over, breathless and frantic."
+        },
+        {
+          "speaker": null,
+          "text": "Rex watches her carefully, tail neutral, head slightly tilted."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...Wff?\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "One small, politely suspicious sound. Translation: \"I don't know you but you seem distressed so I will withhold judgment for now.\""
+        },
+        {
+          "speaker": null,
+          "text": "She explains that a giant of a man called Keeper Brutus has locked down all the village gates. He has sealed the only mountain path behind three heavy gates."
+        },
+        {
+          "speaker": null,
+          "text": "He won't open a single one until someone proves they are 'worthy of the mountain path' by solving the village's math challenges!"
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Woof.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Translation: \"Well. Let's go solve some math then.\""
+        },
+        {
+          "speaker": "Caelum",
+          "text": "Take me to Keeper Brutus. I'll solve his challenges."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Woof woof!\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Enthusiastic agreement. He has no idea what math is. He is supportive anyway."
+        }
+      ],
+      "next": "gate1_intro"
+    },
+    {
+      "id": "gate1_intro",
+      "chapter": "🏘️ Act One — The Village of Numeria",
+      "background": "/assets/Village of Numeria.png",
+      "mood": "warm",
+      "characters": [
+        "Brutus",
+        "Caelum"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "🚪 GATE ONE — The Apple Stall Problem"
+        },
+        {
+          "speaker": null,
+          "text": "Keeper Brutus stands before the first gate — a towering man with arms like tree trunks and a beard that could house small birds."
+        },
+        {
+          "speaker": null,
+          "text": "Rex looks up at Keeper Brutus. A moment passes."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...Wff.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Translation: \"You are very large and have a large beard. I am gathering more data before forming an opinion.\""
+        },
+        {
+          "speaker": "Brutus",
+          "text": "Here is your first challenge."
+        },
+        {
+          "speaker": null,
+          "text": "He writes on the chalkboard. Rex stares at it, then sniffs it. It smells like chalk. This is not helpful."
+        }
+      ],
+      "next": "gate1"
+    },
+    {
+      "id": "gate1",
+      "chapter": "🏘️ Act One — The Village of Numeria",
+      "background": "/assets/Village of Numeria.png",
+      "mood": "warm",
+      "type": "quiz",
+      "skill": "🎮 Math Skill: Addition & Subtraction",
+      "speaker": "Brutus",
+      "text": "🍎 Mira the apple seller started the morning with 47 apples. She sold 19 apples before noon, then received a new delivery of 32 apples. By afternoon, she sold 14 more. How many apples does Mira have left?",
+      "choices": [
+        {
+          "letter": "A",
+          "text": "60 apples",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "46 apples",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "56 apples",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "28 apples",
+          "correct": false
+        }
+      ],
+      "next": "gate1_success"
+    },
+    {
+      "id": "gate1_success",
+      "chapter": "🏘️ Act One — The Village of Numeria",
+      "background": "/assets/Village of Numeria.png",
+      "mood": "warm",
+      "sfx": "gate_open",
+      "characters": [
+        "Caelum",
+        "Rex"
+      ],
+      "dialogues": [
+        {
+          "speaker": "Caelum",
+          "text": "47 minus 19 is 28... plus 32 is 60... minus 14... Mira has 46 apples left."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"WOOF WOOF!\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "He doesn't know if it's right yet. He is simply cheering."
+        },
+        {
+          "speaker": null,
+          "text": "CLUNK. Gate one opens."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"WOOF! WOOF WOOF WOOF!\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "He spins in a circle, tail absolutely blurring, then dashes through the gate and back again as if needing to celebrate on both sides of it."
+        },
+        {
+          "speaker": "Caelum",
+          "text": "Don't celebrate yet, boy. Two more to go."
+        }
+      ],
+      "next": "gate2_intro"
+    },
+    {
+      "id": "gate2_intro",
+      "chapter": "🏘️ Act One — The Village of Numeria",
+      "background": "/assets/Village of Numeria.png",
+      "mood": "warm",
+      "characters": [
+        "Brutus",
+        "Caelum"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "🚪 GATE TWO — The Market Share Mystery"
+        },
+        {
+          "speaker": null,
+          "text": "Keeper Brutus walks to the second gate and picks up the chalk."
+        },
+        {
+          "speaker": null,
+          "text": "Rex watches him write, following the chalk movement with his eyes like it is the most fascinating thing he has ever seen."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...Woof?\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "The chalk squeaked. That was alarming. He has concerns."
+        },
+        {
+          "speaker": null,
+          "text": "Rex sits right up against Caelum's left leg, a warm steady pressure."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Hmmmff.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Translation: \"I am here. I believe in you. Take your time.\""
+        }
+      ],
+      "next": "gate2"
+    },
+    {
+      "id": "gate2",
+      "chapter": "🏘️ Act One — The Village of Numeria",
+      "background": "/assets/Village of Numeria.png",
+      "mood": "warm",
+      "type": "quiz",
+      "skill": "🎮 Math Skill: Multiplication & Division",
+      "speaker": "Brutus",
+      "text": "🍞 A baker has 6 trays of bread. Each tray holds 12 loaves. He wants to divide all the loaves equally among 9 families. How many loaves does each family get, and how many are left over?",
+      "choices": [
+        {
+          "letter": "A",
+          "text": "6 loaves each, 2 left over",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "8 loaves each, none left over",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "9 loaves each, none left over",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "7 loaves each, 9 left over",
+          "correct": false
+        }
+      ],
+      "next": "gate2_success"
+    },
+    {
+      "id": "gate2_success",
+      "chapter": "🏘️ Act One — The Village of Numeria",
+      "background": "/assets/Village of Numeria.png",
+      "mood": "warm",
+      "sfx": "gate_open",
+      "characters": [
+        "Caelum",
+        "Rex"
+      ],
+      "dialogues": [
+        {
+          "speaker": "Caelum",
+          "text": "6 trays, 12 loaves each... so 6 times 12 is 72 loaves total. Divide 72 among 9 families... 9 times 8 is 72... so each family gets 8 loaves, and there are no loaves left over."
+        },
+        {
+          "speaker": null,
+          "text": "A beat. Keeper Brutus checks his notes twice."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Woof? Woof woof?\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Translation: \"IS IT RIGHT? PLEASE TELL ME IT'S RIGHT. THE SUSPENSE IS TERRIBLE.\""
+        },
+        {
+          "speaker": null,
+          "text": "CLUNK. Gate two opens."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"WOOF! WOOF! AWWOOoooOOO—!\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "He lets out a full howl of celebration that echoes off the gate and startles three nearby pigeons."
+        }
+      ],
+      "next": "gate3_intro"
+    },
+    {
+      "id": "gate3_intro",
+      "chapter": "🏘️ Act One — The Village of Numeria",
+      "background": "/assets/Village of Numeria.png",
+      "mood": "warm",
+      "characters": [
+        "Brutus",
+        "Caelum"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "🚪 GATE THREE — The Distance Dilemma"
+        },
+        {
+          "speaker": null,
+          "text": "The third gate — deep red and heavier than the others. Rex approaches it slowly this time."
+        },
+        {
+          "speaker": null,
+          "text": "He sniffs the base of it. Then the sides. Then he sits down and stares at it for a moment, very seriously."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...Grrrff.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "He doesn't trust this gate. It is the reddest gate. Something important is on the other side of this one."
+        },
+        {
+          "speaker": null,
+          "text": "Rex presses his warm side against Caelum's leg."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...Wff.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Soft. Quiet. Just: \"I am here. Right here. I'm not going anywhere.\""
+        }
+      ],
+      "next": "gate3"
+    },
+    {
+      "id": "gate3",
+      "chapter": "🏘️ Act One — The Village of Numeria",
+      "background": "/assets/Village of Numeria.png",
+      "mood": "warm",
+      "type": "quiz",
+      "skill": "🎮 Math Skill: Word Problem — Mixed Operations",
+      "speaker": "Brutus",
+      "text": "🗺️ A journey is 150 kilometers long. On the first day, a traveler covers 45 kilometers. On the second day, he covers 50 kilometers. How many kilometers remain for the third day?",
+      "choices": [
+        {
+          "letter": "A",
+          "text": "45 kilometers",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "55 kilometers",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "65 kilometers",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "50 kilometers",
+          "correct": false
+        }
+      ],
+      "next": "gate3_success"
+    },
+    {
+      "id": "gate3_success",
+      "chapter": "🏘️ Act One — The Village of Numeria",
+      "background": "/assets/Village of Numeria.png",
+      "mood": "warm",
+      "sfx": "gate_open",
+      "characters": [
+        "Brutus",
+        "Caelum"
+      ],
+      "dialogues": [
+        {
+          "speaker": "Caelum",
+          "text": "150 minus 45 is 105... minus 50 more is... 55 kilometers remain for the third day."
+        },
+        {
+          "speaker": null,
+          "text": "Rex holds his breath. Keeper Brutus stands. All six feet of him. And bows his great head."
+        },
+        {
+          "speaker": "Brutus",
+          "text": "You are worthy, Prince Caelum of Solvane."
+        },
+        {
+          "speaker": null,
+          "text": "BOOM. The final gate opens."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"WOOF! WOOF WOOF! AWWOOOOoooOOOO! WOOF WOOF WOOF WOOF—!\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "He launches himself in a full sprint around the gate, around Caelum, through the open gate, back through the gate, jumps up on Caelum with both paws, licks his face twice, and runs back through the gate again."
+        },
+        {
+          "speaker": null,
+          "text": "The crowd of villagers erupts into cheers."
+        },
+        {
+          "speaker": "Brutus",
+          "text": "...You're a ridiculous animal."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Woof.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Cheerfully. Translation: \"Thank you, large man.\""
+        }
+      ],
+      "next": "act2_intro"
+    },
+    {
+      "id": "act2_intro",
+      "chapter": "🌋 Act Two — The Volcano of Mount Ignis",
+      "background": "/assets/Mount Ignis - The Path.png",
+      "mood": "volcanic",
+      "characters": [
+        "Caelum",
+        "Rex"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "The moment the temperature changes, Rex notices."
+        },
+        {
+          "speaker": null,
+          "text": "He slows from his enthusiastic trot to a careful walk, nose working overtime. The cold air of the plains has been replaced by something dry and warm and alive."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Snfffff...snfff...snfff.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Translation: \"Sulfur. Hot rock. Something burning far away. Something alive — very alive — up there. Something I have never smelled before in my entire life.\""
+        },
+        {
+          "speaker": "Caelum",
+          "text": "We're on the mountain now, Rex. Stay close."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Wff.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "He has absolutely no intention of being anything other than close. He steps so near to Caelum that he is practically walking on his shadow."
+        }
+      ],
+      "next": "act2_rumble"
+    },
+    {
+      "id": "act2_rumble",
+      "chapter": "🌋 Act Two — The Volcano of Mount Ignis",
+      "background": "/assets/Mount Ignis - The Path.png",
+      "mood": "volcanic",
+      "sfx": "screen_shake",
+      "characters": [
+        "Caelum",
+        "Rex"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "A distant rumble rolls through the mountain from somewhere deep below. The ground trembles faintly."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"WOOF!\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Startled. Jumps slightly to the side. Looks at the ground suspiciously."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Grrrff. Woof woof.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Translation: \"The GROUND made a noise. I did not like that. Please advise.\""
+        },
+        {
+          "speaker": "Caelum",
+          "text": "It's just the volcano. It's alive. That's normal here."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...Wff.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Deeply unconvinced. He sniffs the ground. Then stares at it for a moment longer as if issuing it a firm warning. Then continues walking."
+        }
+      ],
+      "next": "riddle1_intro"
+    },
+    {
+      "id": "riddle1_intro",
+      "chapter": "🌋 Act Two — The Volcano of Mount Ignis",
+      "background": "/assets/Mount Ignis - The Path.png",
+      "mood": "volcanic",
+      "characters": [
+        "Caelum",
+        "Rex"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "🪨 SIGNPOST ONE — The Fork in the Lava Field"
+        },
+        {
+          "speaker": null,
+          "text": "Rex reaches the signpost first. He sniffs every inch of it. The base. The carved letters. The top."
+        },
+        {
+          "speaker": null,
+          "text": "He circles it once. Then sits and looks at Caelum as if to say: \"Your turn. I have done my part.\""
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Woof.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Translation: \"There is important writing on this post. I cannot read it but it smells significant.\""
+        }
+      ],
+      "next": "riddle1"
+    },
+    {
+      "id": "riddle1",
+      "chapter": "🌋 Act Two — The Volcano of Mount Ignis",
+      "background": "/assets/Mount Ignis - The Path.png",
+      "mood": "volcanic",
+      "type": "riddle",
+      "skill": "🧩 Riddle Challenge",
+      "speaker": null,
+      "text": "The carved signpost reads:\n\n\"I have hands, but I cannot clap.\nI have a face, but I have no eyes.\nI tell you something every moment of every day.\nWhat am I?\"\n\nHint: The answer has TWO hands — choose the path that matches.",
+      "choices": [
+        {
+          "letter": "A",
+          "text": "Take the LEFT path (one hand)",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Take the RIGHT path (two hands)",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Take the MIDDLE path (no hands)",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Turn BACK (too many hands)",
+          "correct": false
+        }
+      ],
+      "next": "riddle1_success"
+    },
+    {
+      "id": "riddle1_success",
+      "chapter": "🌋 Act Two — The Volcano of Mount Ignis",
+      "background": "/assets/Mount Ignis - The Path.png",
+      "mood": "volcanic",
+      "characters": [
+        "Caelum",
+        "Rex"
+      ],
+      "dialogues": [
+        {
+          "speaker": "Caelum",
+          "text": "A clock! A clock has hands and a face and tells the time!"
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"WOOF!\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "No idea what a clock is. Fully supportive."
+        },
+        {
+          "speaker": "Caelum",
+          "text": "A clock has two hands — we take the RIGHT path!"
+        },
+        {
+          "speaker": null,
+          "text": "The stone pillar glows and the carved arrow confirms: right."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...Woof.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Impressed. Also slightly wary of glowing rocks. But impressed."
+        }
+      ],
+      "next": "riddle2_intro"
+    },
+    {
+      "id": "riddle2_intro",
+      "chapter": "🌋 Act Two — The Volcano of Mount Ignis",
+      "background": "/assets/Mount Ignis - The Path.png",
+      "mood": "volcanic",
+      "characters": [
+        "Caelum",
+        "Rex"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "🪨 SIGNPOST TWO — The Tunnel of Three Doors"
+        },
+        {
+          "speaker": null,
+          "text": "They step into the cave. Three doors loom before them — black, white, and red."
+        },
+        {
+          "speaker": null,
+          "text": "Rex wastes no time. He trots straight to the BLACK door and sniffs it."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...Grff.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Doesn't like the black door. Something cold and still behind it."
+        },
+        {
+          "speaker": null,
+          "text": "He moves to the WHITE door."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...Hmff.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Uncertain. Too much echo behind this one."
+        },
+        {
+          "speaker": null,
+          "text": "He moves to the RED door. He sniffs it carefully. Thoroughly. For a long time."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Woof.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Decisive. Sits down directly in front of it and looks back at Caelum with great certainty. Translation: \"It is this one. I don't know why. It is this one.\""
+        }
+      ],
+      "next": "riddle2"
+    },
+    {
+      "id": "riddle2",
+      "chapter": "🌋 Act Two — The Volcano of Mount Ignis",
+      "background": "/assets/Mount Ignis - The Path.png",
+      "mood": "volcanic",
+      "type": "riddle",
+      "skill": "🧩 Riddle Challenge",
+      "speaker": null,
+      "text": "Carved above the three doors:\n\n\"The more you take, the more you leave behind.\nWhat am I?\"\n\nThe BLACK door bears a symbol of shadows.\nThe WHITE door bears a symbol of echoes.\nThe RED door bears a symbol of something you make.",
+      "choices": [
+        {
+          "letter": "A",
+          "text": "BLACK door — Shadows",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "WHITE door — Echoes",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "RED door — Footsteps",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Go back — It's a trap",
+          "correct": false
+        }
+      ],
+      "next": "riddle2_success"
+    },
+    {
+      "id": "riddle2_success",
+      "chapter": "🌋 Act Two — The Volcano of Mount Ignis",
+      "background": "/assets/Mount Ignis - The Path.png",
+      "mood": "volcanic",
+      "characters": [
+        "Caelum",
+        "Rex"
+      ],
+      "dialogues": [
+        {
+          "speaker": "Caelum",
+          "text": "Footsteps! The more steps you take, the more footsteps you leave behind!"
+        },
+        {
+          "speaker": null,
+          "text": "He checks the sign — footsteps are something you make. Red door."
+        },
+        {
+          "speaker": "Caelum",
+          "text": "Were you trying to tell me that the whole time?!"
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Woof woof!\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Translation: \"YES. YES I WAS. I HAVE BEEN SITTING HERE.\""
+        },
+        {
+          "speaker": null,
+          "text": "The red door swings open on its own. Rex walks through it first, head high, tail up, with the energy of someone who called it."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Woof.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Smugly. Very smugly."
+        }
+      ],
+      "next": "riddle3_intro"
+    },
+    {
+      "id": "riddle3_intro",
+      "chapter": "🌋 Act Two — The Volcano of Mount Ignis",
+      "background": "/assets/Mount Ignis - The Path.png",
+      "mood": "volcanic",
+      "characters": [
+        "Caelum",
+        "Rex"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "🪨 SIGNPOST THREE — The Bridge of Rumbling Stone"
+        },
+        {
+          "speaker": null,
+          "text": "The bridge appears ahead — narrow stone over a slow river of lava far, far below."
+        },
+        {
+          "speaker": null,
+          "text": "Rex stops at the edge. He looks down at the lava. Then back at Caelum. Then down at the lava again."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...Whhhhfff.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "A very long, very low exhale. Translation: \"I see the lava. I acknowledge the lava. I do not like the lava. But I will cross the bridge because the prince is crossing the bridge.\""
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Grrrff.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Issuing the lava a warning. Just in case."
+        }
+      ],
+      "next": "riddle3"
+    },
+    {
+      "id": "riddle3",
+      "chapter": "🌋 Act Two — The Volcano of Mount Ignis",
+      "background": "/assets/Mount Ignis - The Path.png",
+      "mood": "volcanic",
+      "type": "riddle",
+      "skill": "🧩 Riddle Challenge",
+      "speaker": null,
+      "sfx": "screen_shake",
+      "text": "The glowing signpost at the bridge's midpoint reads:\n\n\"I have cities, but no houses.\nI have mountains, but no trees.\nI have water, but no fish.\nWhat am I?\"\n\nChoose your path: LEFT, FORWARD, or RIGHT?",
+      "choices": [
+        {
+          "letter": "A",
+          "text": "Go LEFT — toward the water",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Go FORWARD — a Map shows the way",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Go RIGHT — toward the mountains",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Go BACK — this bridge is too dangerous",
+          "correct": false
+        }
+      ],
+      "next": "riddle3_success"
+    },
+    {
+      "id": "riddle3_success",
+      "chapter": "🌋 Act Two — The Volcano of Mount Ignis",
+      "background": "/assets/Mount Ignis - The Path.png",
+      "mood": "volcanic",
+      "characters": [
+        "Caelum",
+        "Rex"
+      ],
+      "dialogues": [
+        {
+          "speaker": "Caelum",
+          "text": "A MAP! A map has cities, mountains, water, and roads — all drawn out — but nothing actually lives there!"
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"WOOF! WOOF WOOF!\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "ENTHUSIASTIC. Also he is very ready to get off this bridge."
+        },
+        {
+          "speaker": "Caelum",
+          "text": "We go FORWARD!"
+        },
+        {
+          "speaker": null,
+          "text": "They reach the far side and pass under the stone arch."
+        },
+        {
+          "speaker": null,
+          "text": "Rex immediately turns around and BARKS at the bridge from the safety of solid ground."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"WOOF. WOOF WOOF. WOOF.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Translation: \"I crossed you. I CROSSED you. And I would like you to know that I was not afraid. I was simply PREPARED for problems. That is different.\""
+        },
+        {
+          "speaker": "Caelum",
+          "text": "...Are you barking at the bridge?"
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Woof.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Dignified. Final. He turns away from the bridge and never looks at it again."
+        }
+      ],
+      "next": "act2_arch"
+    },
+    {
+      "id": "act2_arch",
+      "chapter": "🌋 Act Two — The Volcano of Mount Ignis",
+      "background": "/assets/Mount Ignis - The Path.png",
+      "mood": "volcanic",
+      "sfx": "flash_gold",
+      "characters": [
+        "Caelum",
+        "Rex"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "Caelum stands beneath the glowing arch that reads: \"YOU HAVE READ THE MOUNTAIN'S SIGNS.\""
+        },
+        {
+          "speaker": null,
+          "text": "Rex stands beside him, looking up at the glowing peak. The golden light pulses from somewhere at the summit like a heartbeat made of flame."
+        },
+        {
+          "speaker": null,
+          "text": "Something in Rex's entire body changes. His nose lifts. His eyes go very, very wide. His tail goes perfectly, completely still."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...Woooooo.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Not a bark. Not a whine. Something between a whisper and a howl — low, wondering, a little reverent. Like hearing a song you've never heard before but somehow already know."
+        },
+        {
+          "speaker": "Caelum",
+          "text": "We're almost there, Rex."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...Wff.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Soft as a breath. Translation: \"I know. I'm ready. Let's go.\""
+        },
+        {
+          "speaker": null,
+          "text": "The prince and his dog walk through the arch together."
+        }
+      ],
+      "next": "act3_intro"
+    },
+    {
+      "id": "act3_intro",
+      "chapter": "🔥 Act Three — The Lair of the Phoenix",
+      "background": "/assets/The Phoenix Lair.png",
+      "mood": "fire",
+      "characters": [
+        "Caelum",
+        "Rex"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "Rex steps through the arch and into the crater — and stops. Completely."
+        },
+        {
+          "speaker": null,
+          "text": "Every dog instinct he has is firing at once. The smell here is overwhelming — not unpleasant, but immense. Like standing inside a sunrise."
+        },
+        {
+          "speaker": null,
+          "text": "Flowers made of flame bloom along the walls. The golden nest at the center glows like a small sun."
+        },
+        {
+          "speaker": null,
+          "text": "And there, at the top of it — Rex sees the Phoenix."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"......whhfff.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "The smallest exhale. Every hair on his golden coat stands up — not in fear, but in awe."
+        },
+        {
+          "speaker": null,
+          "text": "And then, very slowly, Rex does something he has never done with any creature in his entire life. He sits down. He lowers his head. And he goes quiet."
+        },
+        {
+          "speaker": null,
+          "text": "Prince Caelum watches this and drops to one knee as well, taking Rex's lead."
+        }
+      ],
+      "next": "act3_phoenix_appears"
+    },
+    {
+      "id": "act3_phoenix_appears",
+      "chapter": "🔥 Act Three — The Lair of the Phoenix",
+      "background": "/assets/The Phoenix Lair.png",
+      "mood": "fire",
+      "characters": [
+        "Phoenix",
+        "Caelum"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "One great golden eye opens. Then the other."
+        },
+        {
+          "speaker": "Phoenix",
+          "text": "A human child. And his faithful dog. You have crossed the village of numbers and read the riddle-signs of my mountain. Few make it this far. Fewer still arrive with such a companion."
+        },
+        {
+          "speaker": null,
+          "text": "Its gaze moves to Rex."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...Wff.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "The quietest, most sincere bark of his life. Translation: \"Hello. I am Rex. I am very glad you are real.\""
+        },
+        {
+          "speaker": "Phoenix",
+          "text": "Convince me, young prince. Not with commands. Not with royal titles. But with words. The right words. The true words."
+        },
+        {
+          "speaker": null,
+          "text": "Seven glowing stones float forward. Rex watches them with wide eyes."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...Woof?\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Translation: \"The rocks are... floating? That is new. I have so many questions.\""
+        }
+      ],
+      "next": "vocab1"
+    },
+    {
+      "id": "vocab1",
+      "chapter": "🔥 Act Three — The Lair of the Phoenix",
+      "background": "/assets/The Phoenix Lair.png",
+      "mood": "fire",
+      "type": "vocabulary",
+      "skill": "📝 Vocabulary: Describing the King",
+      "speaker": "Phoenix",
+      "text": "🔥 CHALLENGE ONE — The first stone glows with a single word: \"SICK\"\n\nThe Phoenix speaks: \"Your father is ill. But 'sick' is a small word for a great suffering. Choose the word that best describes what has truly happened to your king.\"",
+      "choices": [
+        {
+          "letter": "A",
+          "text": "Sleepy — he just needs rest",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Afflicted — struck by a deep, unnatural suffering",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Hungry — he hasn't been eating",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Bored — he has nothing to do",
+          "correct": false
+        }
+      ],
+      "next": "vocab1_success"
+    },
+    {
+      "id": "vocab1_success",
+      "chapter": "🔥 Act Three — The Lair of the Phoenix",
+      "background": "/assets/The Phoenix Lair.png",
+      "mood": "fire",
+      "characters": [
+        "Caelum",
+        "Phoenix"
+      ],
+      "dialogues": [
+        {
+          "speaker": "Caelum",
+          "text": "My father is not merely sick. He is afflicted. He is stricken. The cold has claimed him in a way that no healer has ever seen. He is tormented by a chill that comes from within."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...Whhf.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Translation: \"Yes. That is the right word. That is what it looked like.\""
+        },
+        {
+          "speaker": null,
+          "text": "The stone glows. A small flame rises from the nest."
+        },
+        {
+          "speaker": "Phoenix",
+          "text": "Afflicted. Stricken. Tormented. Yes. Those are words that carry the truth."
+        }
+      ],
+      "next": "vocab2"
+    },
+    {
+      "id": "vocab2",
+      "chapter": "🔥 Act Three — The Lair of the Phoenix",
+      "background": "/assets/The Phoenix Lair.png",
+      "mood": "fire",
+      "type": "vocabulary",
+      "skill": "📝 Vocabulary: Describing the Journey",
+      "speaker": "Phoenix",
+      "text": "🔥 CHALLENGE TWO — The second stone glows: \"LONG\"\n\nThe Phoenix speaks: \"Your journey here was not short. But 'long' barely describes it. Choose the word that truly captures what you endured.\"",
+      "choices": [
+        {
+          "letter": "A",
+          "text": "Boring — nothing happened",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Easy — it was a simple walk",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Arduous — exhausting, difficult, and demanding",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Short — it went by quickly",
+          "correct": false
+        }
+      ],
+      "next": "vocab2_success"
+    },
+    {
+      "id": "vocab2_success",
+      "chapter": "🔥 Act Three — The Lair of the Phoenix",
+      "background": "/assets/The Phoenix Lair.png",
+      "mood": "fire",
+      "characters": [
+        "Caelum",
+        "Phoenix"
+      ],
+      "dialogues": [
+        {
+          "speaker": "Caelum",
+          "text": "Our journey was not long — it was arduous. It was grueling and at times relentless. But it was also purposeful. Every hard step was taken with my father's face in my mind."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Woof woof.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Translation: \"The BRIDGE. I would like to officially add the bridge to this description.\""
+        },
+        {
+          "speaker": null,
+          "text": "Two more flames rise from the nest."
+        },
+        {
+          "speaker": "Phoenix",
+          "text": "Arduous. Grueling. Purposeful. The dog agrees with you."
+        }
+      ],
+      "next": "vocab3"
+    },
+    {
+      "id": "vocab3",
+      "chapter": "🔥 Act Three — The Lair of the Phoenix",
+      "background": "/assets/The Phoenix Lair.png",
+      "mood": "fire",
+      "type": "vocabulary",
+      "skill": "📝 Vocabulary: Describing Rex",
+      "speaker": "Phoenix",
+      "text": "🔥 CHALLENGE THREE — The third stone glows: \"GOOD\"\n\nThe Phoenix's gaze shifts fully to Rex. \"Your companion. He is more than 'good.' Choose the word that honors what he truly is.\"",
+      "choices": [
+        {
+          "letter": "A",
+          "text": "Steadfast — unwavering, loyal to the very end",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Loud — he barks a lot",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Funny — he makes people laugh",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Fluffy — he has nice fur",
+          "correct": false
+        }
+      ],
+      "next": "vocab3_success"
+    },
+    {
+      "id": "vocab3_success",
+      "chapter": "🔥 Act Three — The Lair of the Phoenix",
+      "background": "/assets/The Phoenix Lair.png",
+      "mood": "fire",
+      "characters": [
+        "Caelum",
+        "Phoenix"
+      ],
+      "dialogues": [
+        {
+          "speaker": "Caelum",
+          "text": "Rex is not just good. He is steadfast. He is devoted in a way that humbles me. Through every wrong turn and every blast of heat on this mountain, he never once hesitated. He is loyal to his very bones — and fearless when I needed courage most."
+        },
+        {
+          "speaker": null,
+          "text": "Rex presses his head gently against Caelum's hand."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...mmmhh.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "The very same sound he made at the king's bedside. The sound of deep, quiet love."
+        },
+        {
+          "speaker": null,
+          "text": "Three flames rise at once. The nest blazes brighter."
+        },
+        {
+          "speaker": "Phoenix",
+          "text": "Steadfast. Devoted. Loyal. Fearless. A dog described by a prince who loves him."
+        },
+        {
+          "speaker": "Phoenix",
+          "text": "The truest words of the day."
+        }
+      ],
+      "next": "vocab4"
+    },
+    {
+      "id": "vocab4",
+      "chapter": "🔥 Act Three — The Lair of the Phoenix",
+      "background": "/assets/The Phoenix Lair.png",
+      "mood": "fire",
+      "type": "vocabulary",
+      "skill": "📝 Vocabulary: Describing the Phoenix",
+      "speaker": "Phoenix",
+      "text": "🔥 CHALLENGE FOUR — The fourth stone glows: \"BIG\"\n\nThe Phoenix rumbles with amusement. \"And what of me, young prince? Am I merely... 'big'? Choose a word worthy of a Phoenix.\"",
+      "choices": [
+        {
+          "letter": "A",
+          "text": "Tall — you are very tall",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Scary — you are frightening",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Magnificent — grand, awe-inspiring, beyond measure",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Heavy — you look like you weigh a lot",
+          "correct": false
+        }
+      ],
+      "next": "vocab4_success"
+    },
+    {
+      "id": "vocab4_success",
+      "chapter": "🔥 Act Three — The Lair of the Phoenix",
+      "background": "/assets/The Phoenix Lair.png",
+      "mood": "fire",
+      "characters": [
+        "Caelum",
+        "Phoenix"
+      ],
+      "dialogues": [
+        {
+          "speaker": "Caelum",
+          "text": "You are not big. You are immense — not just in size but in presence. You are magnificent in a way that makes the rest of the world feel quieter. You are ancient and resplendent, and standing before you, I understand why this mountain was built around you and not the other way around."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...AAAWwwoooo.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Not a full howl. Something quieter — like the beginning of a song."
+        },
+        {
+          "speaker": null,
+          "text": "The Phoenix laughs — a sound like warm crackling fire."
+        },
+        {
+          "speaker": "Phoenix",
+          "text": "Immense. Magnificent. Ancient. Resplendent. You are not flattering me, young prince. I can always tell the difference. You mean those words."
+        }
+      ],
+      "next": "vocab5"
+    },
+    {
+      "id": "vocab5",
+      "chapter": "🔥 Act Three — The Lair of the Phoenix",
+      "background": "/assets/The Phoenix Lair.png",
+      "mood": "fire",
+      "type": "vocabulary",
+      "skill": "📝 Vocabulary: The Final Word",
+      "speaker": "Phoenix",
+      "text": "🔥 THE FINAL CHALLENGE — The last stone glows with the most important word: \"WARM\"\n\nThe Phoenix's voice is quiet now. \"This is the word that matters most. What does 'warm' truly mean to you, Prince Caelum?\"",
+      "choices": [
+        {
+          "letter": "A",
+          "text": "Hot — warm means a high temperature",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Comfortable — warm means cozy",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Alive — warm means hopeful, restored, whole again",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Sunny — warm means the sun is out",
+          "correct": false
+        }
+      ],
+      "next": "vocab5_success"
+    },
+    {
+      "id": "vocab5_success",
+      "chapter": "🔥 Act Three — The Lair of the Phoenix",
+      "background": "/assets/The Phoenix Lair.png",
+      "mood": "fire",
+      "characters": [
+        "Caelum",
+        "Phoenix"
+      ],
+      "dialogues": [
+        {
+          "speaker": "Caelum",
+          "text": "Warm means alive. It means hopeful. The warmth I seek for my father is not just heat — it is the feeling of being restored, of being whole again."
+        },
+        {
+          "speaker": "Caelum",
+          "text": "My father is a gentle and generous king — and the cold has made him frail and pale and so very far from himself. What I ask of you is not a cure. It is the chance to bring him back to who he was — vibrant and warm-hearted, the way he has always been."
+        },
+        {
+          "speaker": null,
+          "text": "His voice breaks on the last word."
+        },
+        {
+          "speaker": null,
+          "text": "Rex turns his face into Caelum's hand. He doesn't make a sound. He just stays there."
+        }
+      ],
+      "next": "act3_feather"
+    },
+    {
+      "id": "act3_feather",
+      "chapter": "🔥 Act Three — The Lair of the Phoenix",
+      "background": "/assets/The Phoenix Lair.png",
+      "mood": "fire",
+      "sfx": "flash_gold",
+      "characters": [
+        "Phoenix",
+        "Caelum"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "The Phoenix rises from its nest. Wings unfurl — brilliant crimson and gold, filling the entire crater."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Whhhhff—!\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Breathless. Overwhelmed. The sheer magnitude of it hits him like a warm wave."
+        },
+        {
+          "speaker": "Phoenix",
+          "text": "I will not give you a potion or a vial. My warmth cannot be bottled."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Wff...?\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Translation: \"Wait — what? But we came all this way—\""
+        },
+        {
+          "speaker": "Phoenix",
+          "text": "But I will give you something better."
+        },
+        {
+          "speaker": null,
+          "text": "It breathes out — long, slow, golden — and from it emerges a single perfect feather, drifting slowly down into Caelum's outstretched hands."
+        },
+        {
+          "speaker": null,
+          "text": "Rex leans forward and sniffs it — just barely — one delicate, reverent sniff."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...Ohhhhwoooo.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Translation: \"It's warm. It is SO warm. It smells like everything good. This will work. This will absolutely work.\""
+        },
+        {
+          "speaker": "Phoenix",
+          "text": "Thank your dog. He sat before me with more dignity and sincerity than most kings I have met."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Woof.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Simple. Full. The most sincere single bark of the entire journey. Translation: \"Thank you for my friend's father. Thank you for the warmth. Thank you.\""
+        }
+      ],
+      "next": "epilogue_1"
+    },
+    {
+      "id": "epilogue_1",
+      "chapter": "👑 Epilogue — The Return of Warmth",
+      "background": "/assets/Solvane Castle.png",
+      "mood": "warm",
+      "characters": [
+        "Caelum",
+        "Rex"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "Three days back down the mountain and across the plains."
+        },
+        {
+          "speaker": null,
+          "text": "Rex is... considerably more tired than the journey up. He still leads the way. He still trots ahead. But his pace is slower."
+        },
+        {
+          "speaker": null,
+          "text": "Twice Caelum has caught him attempting to nap mid-walk — jolting awake when his nose hits the ground, then continuing as if nothing happened."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Woof.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Groggy. Still walking. Completely committed."
+        },
+        {
+          "speaker": null,
+          "text": "They ride through the gates of Solvane. The frost. The worried faces. The cold banners."
+        },
+        {
+          "speaker": null,
+          "text": "Rex can smell the king's chamber from here — the frost, the cold, the wrong-ness of it."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Grrrff.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Urgent. Translation: \"Faster. We need to go faster.\""
+        }
+      ],
+      "next": "epilogue_2"
+    },
+    {
+      "id": "epilogue_2",
+      "chapter": "👑 Epilogue — The Return of Warmth",
+      "background": "/assets/Solvane Castle.png",
+      "mood": "frost",
+      "sfx": "flash_gold",
+      "characters": [
+        "Aldric",
+        "Caelum"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "In the royal chamber. The still king. The shallow breathing. The frost-covered walls."
+        },
+        {
+          "speaker": null,
+          "text": "Rex is through the door before it fully opens. He goes straight to the king's bedside."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...Whhfff.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "The most heartbroken sound. Translation: \"He got worse. He got worse while we were gone. Hurry.\""
+        },
+        {
+          "speaker": "Caelum",
+          "text": "Father. I'm home."
+        },
+        {
+          "speaker": "Aldric",
+          "text": "...Caelum..."
+        },
+        {
+          "speaker": null,
+          "text": "Caelum brings out the Phoenix feather. Rex sees the light."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"Woof.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Soft. Urgent. Translation: \"Yes. Now. Do it now.\""
+        },
+        {
+          "speaker": null,
+          "text": "The golden light fills the room. The frost melts. The color returns. The breathing deepens. The smile spreads."
+        },
+        {
+          "speaker": "Aldric",
+          "text": "...warm. I feel... warm."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"WOOF!\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "He can't help it. He barks once — loud and clear and full of relief — and his whole body shakes with it."
+        }
+      ],
+      "next": "epilogue_3"
+    },
+    {
+      "id": "epilogue_3",
+      "chapter": "👑 Epilogue — The Return of Warmth",
+      "background": "/assets/Solvane Castle.png",
+      "mood": "warm",
+      "characters": [
+        "Aldric",
+        "Caelum"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "The king opens his eyes fully. Laughs. Looks at his son. Looks at Rex."
+        },
+        {
+          "speaker": "Aldric",
+          "text": "My son came home."
+        },
+        {
+          "speaker": null,
+          "text": "Rex is on the bed. He is on the bed and no one is quite sure how he got there so fast."
+        },
+        {
+          "speaker": null,
+          "text": "He is covering the king's face in complete, unrestrained, deeply unprofessional licks."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"WOOF WOOF WOOF—\" 🐾"
+        },
+        {
+          "speaker": "Aldric",
+          "text": "Rex! Rex, you ridiculous wonderful dog—!"
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"WOOF! WOOF WOOF! AWWOOooOOO—!\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Translation: \"YOU ARE WARM. YOUR FACE IS WARM. YOUR HANDS ARE WARM. EVERYTHING IS WARM. THIS IS THE BEST DAY. THE BEST DAY OF MY ENTIRE LIFE.\""
+        },
+        {
+          "speaker": null,
+          "text": "The room fills with laughter and tears and golden light."
+        },
+        {
+          "speaker": null,
+          "text": "Royal Advisor Maren is crying. Three servants are crying. Even Keeper Brutus, who is somehow here, is pretending to rub something out of his eye."
+        }
+      ],
+      "next": "epilogue_4"
+    },
+    {
+      "id": "epilogue_4",
+      "chapter": "👑 Epilogue — The Return of Warmth",
+      "background": "/assets/Solvane Castle.png",
+      "mood": "warm",
+      "characters": [
+        "Caelum",
+        "Rex"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "Later that evening. The castle steps. The warm golden sunset."
+        },
+        {
+          "speaker": null,
+          "text": "Prince Caelum sits quietly. Rex is curled against his side — not at his feet tonight, but right up against him, warm and heavy and deeply, thoroughly asleep."
+        },
+        {
+          "speaker": null,
+          "text": "His paws twitch slightly. His tail flicks once in whatever dream he's having."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...Wff.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Asleep. Dreaming. Something good — his tail says so."
+        },
+        {
+          "speaker": "Caelum",
+          "text": "We did it, boy."
+        },
+        {
+          "speaker": null,
+          "text": "Rex's tail sweeps once — slow and warm — without him even waking up."
+        },
+        {
+          "speaker": "Rex",
+          "text": "\"...mmhh.\" 🐾"
+        },
+        {
+          "speaker": null,
+          "text": "Translation, from somewhere deep in a dream: \"I know. We did. We really did.\""
+        },
+        {
+          "speaker": null,
+          "text": "The warm golden light of evening wraps around them both."
+        },
+        {
+          "speaker": null,
+          "text": "And the kingdom of Solvane, for the first time in many days, breathes."
+        }
+      ],
+      "next": "ending"
+    },
+    {
+      "id": "ending",
+      "chapter": "👑 The End",
+      "background": "/assets/Solvane Castle.png",
+      "mood": "warm",
+      "type": "ending",
+      "characters": [
+        "Caelum",
+        "Rex"
+      ],
+      "dialogues": [
+        {
+          "speaker": null,
+          "text": "🔥 THE PRINCE AND THE ETERNAL FLAME 🔥\n\nA Story of Courage, Wit, and Warmth\n\nCongratulations! You have completed the adventure!"
+        }
+      ],
+      "next": null
+    }
+  ]
+}
