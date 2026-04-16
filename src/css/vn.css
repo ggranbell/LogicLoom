@@ -314,14 +314,7 @@
 }
 
 .vn-portrait-name {
-  font-family: 'Cinzel', serif;
-  font-size: .8rem;
-  font-weight: 700;
-  color: rgba(255,255,0,0.6);
-  margin-top: -10px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+  display: none;
 }
 
 /* ─── DIALOGUE BOX (Parchment & Stone) ─── */
@@ -658,18 +651,321 @@
   transform: translateY(-2px);
 }
 
-/* ─── RESPONSIVE ─── */
+/* ═══════════════════════════════════════════════════════════
+   VISUAL NOVEL — RESPONSIVE BREAKPOINTS
+   Tablet Landscape → Tablet Portrait → Mobile Landscape
+   → Mobile Portrait → Small Phone
+═══════════════════════════════════════════════════════════ */
+
+/* ── Shared touch improvements ──────────────────────────── */
+@media (pointer: coarse) {
+  /* Bigger tap targets for all interactive VN elements */
+  .vn-choice {
+    min-height: 52px;
+    padding: 14px 18px;
+  }
+  .vn-next-btn {
+    min-height: 48px;
+    padding: 12px 26px;
+    font-size: .9rem;
+  }
+  .vn-ctrl-btn,
+  .tts-btn {
+    min-height: 40px;
+    padding: 8px 14px;
+  }
+  .vn-ending-close {
+    min-height: 52px;
+    padding: 14px 36px;
+  }
+}
+
+/* ── Tablet Landscape  (769 – 1024 px) ─────────────────── */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .vn-portrait-img      { max-height: 500px; }
+  .vn-portraits         { bottom: 100px; }
+  .vn-dialogue-area     { padding: 0 20px 20px; }
+  .vn-text              { font-size: 1rem; line-height: 1.75; }
+  .vn-textbox           { padding: 18px 22px 14px; }
+  .vn-topbar            { padding: 10px 18px; }
+  .vn-chapter-label     { font-size: .82rem; }
+  .vn-progress-bar      { width: 100px; }
+  .ending-title         { font-size: 2rem; }
+}
+
+/* ── Tablet Portrait  (481 – 768 px) ────────────────────── */
 @media (max-width: 768px) {
-  .vn-topbar { flex-direction: column; gap: 8px; align-items: flex-start; }
-  .vn-topbar-left { flex-direction: column; gap: 6px; }
-  .vn-chapter-label { font-size: .75rem; }
-  .vn-progress-bar { width: 90px; }
-  .vn-portraits { gap: 10px; bottom: 28%; }
+
+  /* Top bar: single dense row */
+  .vn-topbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 14px;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .vn-topbar-left {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .vn-chapter-label {
+    font-size: .78rem;
+    max-width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .vn-progress-wrap { gap: 5px; }
+  .vn-progress-bar  { width: 80px; height: 5px; }
+  .vn-progress-label{ font-size: .65rem; }
+  .vn-controls      { gap: 5px; }
+
+  /* Collapse button label text — show only icons on small bar */
+  .vn-ctrl-btn { font-size: .72rem; padding: 6px 10px; }
+  .tts-btn     { font-size: .7rem;  padding: 5px 9px; }
+
+  /* Characters: shorter & capped width so they don't bury dialogue */
+  .vn-portraits {
+    bottom: 38%;    /* sits just above dialogue box */
+    gap: 6px;
+    padding: 0 6px;
+  }
+  .vn-char-slot   { max-width: 42%; }
+  .vn-portrait-img{ max-height: 260px; }
+  .vn-portrait-name { font-size: .68rem; letter-spacing: 1px; }
+
+  /* Dialogue area: slightly shorter namebox, compact text */
+  .vn-dialogue-area { padding: 0 12px 14px; }
+  .vn-namebox {
+    font-size: .82rem;
+    padding: 5px 18px;
+    min-width: 100px;
+  }
+  .vn-textbox {
+    padding: 14px 16px 12px;
+    border-radius: 0 10px 10px 10px;
+  }
+  .vn-text {
+    font-size: .92rem;
+    line-height: 1.7;
+    min-height: 52px;
+  }
+
+  /* Choices: vertical list, full-width large targets */
+  .vn-choices {
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .vn-choice {
+    padding: 12px 14px;
+    font-size: .88rem;
+    border-radius: 9px;
+  }
+  .vn-choice-letter {
+    width: 28px;
+    height: 28px;
+    font-size: .72rem;
+    flex-shrink: 0;
+  }
+
+  /* Next button */
+  .vn-next-row { margin-top: 10px; }
+  .vn-next-btn {
+    font-size: .8rem;
+    padding: 9px 18px;
+    border-radius: 7px;
+  }
+
+  /* Skill label */
+  .vn-skill-label { font-size: .65rem; padding: 3px 10px; }
+
+  /* Reward popup */
+  .vn-reward-popup {
+    padding: 18px 28px;
+    border-radius: 14px;
+    width: 80vw;
+    max-width: 320px;
+  }
+  .reward-stars { font-size: 1.6rem; letter-spacing: 5px; }
+  .reward-msg   { font-size: .9rem; }
+
+  /* Ending screen */
+  .ending-icon    { font-size: 3rem; }
+  .ending-title   { font-size: 1.6rem; }
+  .ending-subtitle{ font-size: .88rem; margin-bottom: 22px; }
+  .ending-stats   { flex-direction: column; gap: 12px; align-items: center; }
+  .ending-stat    { padding: 14px 32px; width: 100%; max-width: 260px; }
+  .ending-stat-val{ font-size: 1.25rem; }
+  .vn-ending-close{ padding: 12px 28px; font-size: .88rem; }
+
+  .ending-content {
+    padding: 0 20px;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+}
+
+/* ── Mobile Landscape  (orientation: landscape, max-height 500 px) ── */
+@media (max-height: 500px) and (orientation: landscape) {
+
+  /* Compress top bar to single very thin row */
+  .vn-topbar {
+    padding: 5px 12px;
+    min-height: 0;
+  }
+  .vn-chapter-label { display: none; } /* hide label, keep progress only */
+  .vn-progress-bar  { width: 70px; }
+  .vn-star-badge    { padding: 3px 8px; font-size: .7rem; }
+  .vn-ctrl-btn, .tts-btn { padding: 4px 8px; font-size: .68rem; min-height: 32px; }
+
+  /* Portraits: very short — sit to the side of dialogue */
+  .vn-portraits {
+    bottom: 0;
+    top: 44px;           /* leave room for topbar */
+    align-items: center;
+    pointer-events: none;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 4px;
+    z-index: 5;
+  }
+  .vn-char-slot   { max-width: 22%; }
+  .vn-portrait-img{ max-height: 50vh; }
+  .vn-portrait-name { display: none; } /* hide name tags in landscape */
+
+  /* Dialogue: horizontal strip at bottom, leaving sides for portraits */
+  .vn-dialogue-area {
+    padding: 0 calc(22% + 10px) 8px;   /* indent away from portrait slots */
+  }
+  .vn-namebox {
+    font-size: .75rem;
+    padding: 4px 14px;
+    min-width: 80px;
+  }
+  .vn-textbox {
+    padding: 10px 14px 8px;
+    max-height: 38vh;
+    overflow-y: auto;
+  }
+  .vn-text {
+    font-size: .82rem;
+    line-height: 1.55;
+    min-height: 40px;
+  }
+  .vn-choices { gap: 5px; margin-top: 6px; }
+  .vn-choice  { padding: 8px 10px; font-size: .8rem; }
+  .vn-choice-letter { width: 24px; height: 24px; font-size: .65rem; }
+  .vn-next-row{ margin-top: 6px; }
+  .vn-next-btn{ padding: 6px 16px; font-size: .75rem; }
+  .vn-skill-label { font-size: .6rem; margin-bottom: 4px; }
+
+  /* Reward popup: smaller */
+  .vn-reward-popup { padding: 14px 24px; }
+  .reward-stars    { font-size: 1.3rem; }
+
+  /* Ending: compact two-column stats */
+  .ending-icon    { font-size: 2.4rem; margin-bottom: 8px; }
+  .ending-title   { font-size: 1.3rem; margin-bottom: 4px; }
+  .ending-subtitle{ font-size: .78rem; margin-bottom: 14px; }
+  .ending-stats   { gap: 14px; margin-bottom: 14px; }
+  .ending-stat    { padding: 10px 20px; }
+  .vn-ending-close{ padding: 9px 22px; font-size: .82rem; }
+  .ending-content { padding: 16px; }
+}
+
+/* ── Mobile Portrait  (≤ 480 px) ────────────────────────── */
+@media (max-width: 480px) {
+
+  /* Top bar: tighten further, stack controls below chapter row */
+  .vn-topbar {
+    flex-direction: column;
+    padding: 8px 12px 6px;
+    gap: 5px;
+  }
+  .vn-topbar-left { width: 100%; justify-content: space-between; }
+  .vn-chapter-label {
+    font-size: .72rem;
+    max-width: 140px;
+  }
+  .vn-controls { width: 100%; justify-content: flex-end; }
+
+  /* Hide Read Aloud on tiny screens to save space */
+  .tts-btn { display: none; }
+
+  /* Portraits: very small peek above the dialogue box */
+  .vn-portraits {
+    bottom: 42%;
+    gap: 0;
+    padding: 0 4px;
+  }
+  .vn-char-slot    { max-width: 40%; }
   .vn-portrait-img { max-height: 200px; }
-  .vn-dialogue-area { padding: 0 12px 12px; }
-  .vn-textbox { padding: 14px 16px 12px; }
-  .vn-text { font-size: .92rem; }
-  .vn-choice { padding: 10px 14px; font-size: .88rem; }
-  .ending-stats { flex-direction: column; gap: 12px; }
-  .ending-title { font-size: 1.6rem; }
+  .vn-portrait-name{ font-size: .6rem; letter-spacing: 0.8px; margin-top: -6px; }
+
+  /* Dialogue: full width, comfortable reading */
+  .vn-dialogue-area { padding: 0 10px 12px; }
+  .vn-namebox {
+    font-size: .78rem;
+    padding: 4px 14px;
+    min-width: 90px;
+  }
+  .vn-textbox {
+    padding: 12px 14px 10px;
+    border-radius: 0 9px 9px 9px;
+  }
+  .vn-text {
+    font-size: .88rem;
+    line-height: 1.65;
+    min-height: 48px;
+  }
+  .vn-choices  { gap: 7px; margin-top: 9px; }
+  .vn-choice   { padding: 11px 12px; font-size: .84rem; gap: 9px; }
+  .vn-choice-letter { width: 26px; height: 26px; }
+  .vn-next-btn { font-size: .78rem; padding: 9px 16px; }
+
+  /* Reward popup */
+  .vn-reward-popup { width: 86vw; padding: 16px 20px; }
+  .reward-stars    { font-size: 1.5rem; letter-spacing: 4px; }
+
+  /* Ending */
+  .ending-icon  { font-size: 2.8rem; }
+  .ending-title { font-size: 1.45rem; }
+}
+
+/* ── Very small phones  (≤ 360 px, e.g., older Android) ─── */
+@media (max-width: 360px) {
+
+  .vn-topbar        { padding: 7px 10px 5px; }
+  .vn-chapter-label { display: none; }     /* hide to reclaim space */
+  .vn-ctrl-btn      { padding: 5px 9px; font-size: .68rem; }
+  .vn-star-badge    { font-size: .7rem; padding: 3px 8px; }
+
+  /* Characters hidden on very tiny portrait to avoid overlap */
+  .vn-portraits     { display: none; }
+
+  .vn-dialogue-area { padding: 0 8px 10px; }
+  .vn-namebox { font-size: .72rem; padding: 4px 12px; min-width: 76px; }
+  .vn-textbox { padding: 10px 12px 8px; }
+  .vn-text    { font-size: .82rem; line-height: 1.6; }
+  .vn-choice  { padding: 10px 11px; font-size: .8rem; }
+  .vn-next-btn{ padding: 8px 14px; font-size: .74rem; }
+
+  .ending-title   { font-size: 1.3rem; }
+  .ending-stat    { padding: 10px 18px; }
+  .vn-ending-close{ padding: 10px 20px; font-size: .82rem; }
+}
+
+/* ── Notch / safe-area support (iPhone X+, modern Android) ─ */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .vn-dialogue-area {
+    padding-bottom: max(14px, env(safe-area-inset-bottom));
+  }
+  .vn-topbar {
+    padding-top: max(10px, env(safe-area-inset-top));
+    padding-left:  max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
+  }
 }
