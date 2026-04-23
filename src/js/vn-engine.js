@@ -21,28 +21,34 @@ export function initVN() {
     overlay.addEventListener('click', (e) => {
       // Ignore clicks on buttons/choices
       if (e.target.closest('button') || e.target.closest('.vn-choice')) return;
+      
+      // If voice is playing, we only allow completing the typewriter, not advancing the scene
+      if (isVoicePlaying || (currentAudio && !currentAudio.paused && !currentAudio.ended)) {
+        if (!typewriterDone) {
+          completeTypewriter();
+        }
+        return;
+      }
+      
       if (currentStory && currentSceneId) {
         vnNext();
       }
     });
   }
 
-  const ttsBtn = document.getElementById('ttsBtn');
-  if (ttsBtn) {
-    ttsBtn.addEventListener('click', (e) => {
+  const autoPlayBtn = document.getElementById('autoPlayBtn');
+  if (autoPlayBtn) {
+    autoPlayBtn.addEventListener('click', (e) => {
       e.stopPropagation(); // Prevent advancing scene on click
-      const text = document.getElementById('vnText')?.textContent || '';
-      if ('speechSynthesis' in window && text) {
-        if (speechSynthesis.speaking) {
-          speechSynthesis.cancel();
-          ttsBtn.textContent = '🔊 Read Aloud';
-        } else {
-          const u = new SpeechSynthesisUtterance(text);
-          u.rate = 0.9;
-          u.onend = () => { ttsBtn.textContent = '🔊 Read Aloud'; };
-          speechSynthesis.speak(u);
-          ttsBtn.textContent = '🔊 Playing...';
-        }
+      isAutoPlay = !isAutoPlay;
+      autoPlayBtn.textContent = isAutoPlay ? '⏸ Auto-Play ON' : '▶ Auto-Play OFF';
+      autoPlayBtn.style.background = isAutoPlay ? 'rgba(77, 189, 116, 0.2)' : '';
+      autoPlayBtn.style.color = isAutoPlay ? '#4DBD74' : '';
+      
+      if (isAutoPlay && typewriterDone && !isVoicePlaying) {
+        triggerAutoPlay(1000);
+      } else if (!isAutoPlay) {
+        clearTimeout(autoPlayTimer);
       }
     });
   }
@@ -61,6 +67,11 @@ let totalPuzzles = 0;
 let solvedPuzzles = 0;
 let currentBackground = '';
 let currentMood = '';
+let currentAudio = null;
+let isVoicePlaying = false;
+let voiceExts = {};
+let isAutoPlay = false;
+let autoPlayTimer = null;
 
 // ─── STARS / PARTICLES ───
 function spawnStars() {
@@ -229,6 +240,7 @@ function typewrite(element, text, speed = 25) {
     } else {
       clearInterval(typewriterInterval);
       typewriterDone = true;
+      if (!isVoicePlaying) triggerAutoPlay(2000);
     }
   }, speed);
 }
@@ -240,6 +252,7 @@ function completeTypewriter() {
     textEl.innerHTML = fullText;
   }
   typewriterDone = true;
+  if (!isVoicePlaying) triggerAutoPlay(2000);
 }
 
 // ─── SCREEN EFFECTS ───
@@ -337,6 +350,11 @@ async function loadStory() {
     solvedPuzzles = 0;
     attempts = 0;
 
+    try {
+      const extRes = await fetch('/data/voice_exts.json');
+      voiceExts = await extRes.json();
+    } catch(e) { console.warn("No voice extensions found", e); }
+
     // Load from localStorage if available
     const saved = localStorage.getItem('vn_the_prince_save');
     if (saved) {
@@ -391,7 +409,78 @@ function closeVN() {
   const overlay = document.getElementById('vnOverlay');
   if (overlay) overlay.classList.remove('open');
   clearInterval(typewriterInterval);
+  clearTimeout(autoPlayTimer);
   if ('speechSynthesis' in window) speechSynthesis.cancel();
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio = null;
+  }
+  isVoicePlaying = false;
+}
+
+// ─── VOICE PLAYBACK ───
+function playVoice(voiceUrl) {
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio = null;
+  }
+  isVoicePlaying = false;
+  
+  const nextBtn = document.getElementById('vnNextBtn');
+  const choicesArea = document.getElementById('vnChoicesArea');
+  
+  if (nextBtn) {
+    nextBtn.style.opacity = '0.5';
+    nextBtn.style.pointerEvents = 'none';
+    nextBtn.disabled = true;
+  }
+  if (choicesArea) {
+    choicesArea.style.pointerEvents = 'none';
+  }
+  
+  if (voiceUrl) {
+    isVoicePlaying = true;
+    currentAudio = new Audio(voiceUrl);
+    currentAudio.play().catch(e => {
+      console.warn("Autoplay blocked for voice", e);
+      isVoicePlaying = false;
+      enableInteraction(nextBtn, choicesArea);
+    });
+    currentAudio.onended = () => {
+      isVoicePlaying = false;
+      enableInteraction(nextBtn, choicesArea);
+      triggerAutoPlay(500);
+    };
+  } else {
+    enableInteraction(nextBtn, choicesArea);
+  }
+}
+
+function triggerAutoPlay(delay) {
+  if (!isAutoPlay) return;
+  const scene = currentStory?.scenes.find(s => s.id === currentSceneId);
+  if (!scene) return;
+  
+  // Do not auto-play mini-games or ending
+  if (['quiz', 'riddle', 'vocabulary', 'ending'].includes(scene.type)) return;
+  
+  clearTimeout(autoPlayTimer);
+  autoPlayTimer = setTimeout(() => {
+    if (isAutoPlay && !isVoicePlaying) {
+      vnNext();
+    }
+  }, delay);
+}
+
+function enableInteraction(nextBtn, choicesArea) {
+  if (nextBtn) {
+    nextBtn.style.opacity = '1';
+    nextBtn.style.pointerEvents = 'auto';
+    nextBtn.disabled = false;
+  }
+  if (choicesArea) {
+    choicesArea.style.pointerEvents = 'auto';
+  }
 }
 
 // ─── RENDER SCENE ───
@@ -446,12 +535,16 @@ function renderScene() {
 
   // Handle ending
   if (scene.type === 'ending') {
+    const ext = voiceExts[`${scene.id}_0`];
+    playVoice(ext ? `/assets/Voice/Mapped/${scene.id}_0${ext}` : null);
     showEnding();
     return;
   }
 
   // Handle quiz / riddle / vocabulary
   if (scene.type === 'quiz' || scene.type === 'riddle' || scene.type === 'vocabulary') {
+    const ext = voiceExts[`${scene.id}_quiz`];
+    playVoice(ext ? `/assets/Voice/Mapped/${scene.id}_quiz${ext}` : null);
     const speakerKey = scene.speaker;
     if (speakerKey) {
       const charInfo = currentStory.characters[speakerKey];
@@ -484,6 +577,8 @@ function renderScene() {
     // Normal dialogue
     choicesArea.style.display = 'none';
     const dialogue = scene.dialogues[currentDialogueIdx];
+    const ext = voiceExts[`${scene.id}_${currentDialogueIdx}`];
+    playVoice(ext ? `/assets/Voice/Mapped/${scene.id}_${currentDialogueIdx}${ext}` : null);
 
     if (dialogue.speaker === null) {
       namebox.textContent = '📖 Narrator';
@@ -511,6 +606,7 @@ function renderScene() {
 
 // ─── HANDLE CHOICE ───
 function handleChoice(choice, btnElement, nextSceneId) {
+  if (isVoicePlaying || (currentAudio && !currentAudio.paused && !currentAudio.ended)) return;
   attempts++;
   const allBtns = document.querySelectorAll('.vn-choice');
   allBtns.forEach(b => b.disabled = true);
@@ -558,9 +654,17 @@ function showEnding() {
 
 // ─── NEXT ───
 function vnNext() {
+  clearTimeout(autoPlayTimer);
+
   // If typewriter is still running, complete it first
   if (!typewriterDone) {
     completeTypewriter();
+    return;
+  }
+
+  // Block scene advancement if voice is actively playing
+  if (isVoicePlaying || (currentAudio && !currentAudio.paused && !currentAudio.ended)) {
+    console.log("Blocked next: Audio is still playing");
     return;
   }
 
