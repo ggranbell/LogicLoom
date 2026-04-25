@@ -9,6 +9,7 @@ export function initVN() {
   window.resetVN = resetVN;
   window.closeVN = closeVN;
   window.vnNext = vnNext;
+  window.skipToNextMinigame = skipToNextMinigame;
   window.resetVnProgress = function() {
     if (confirm("Reset your story progress and start from the beginning?")) {
       localStorage.removeItem('vn_the_prince_save');
@@ -685,5 +686,45 @@ function vnNext() {
         closeVN();
       }
     }
+  }
+}
+
+export function skipToNextMinigame() {
+  if (!currentStory || !currentSceneId) return;
+
+  // Stop any playing audio
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio = null;
+    isVoicePlaying = false;
+  }
+  
+  clearTimeout(autoPlayTimer);
+
+  const scenes = currentStory.scenes;
+  const currentIdx = scenes.findIndex(s => s.id === currentSceneId);
+
+  // Look for the next scene that is a minigame
+  for (let i = currentIdx + 1; i < scenes.length; i++) {
+    const s = scenes[i];
+    if (['quiz', 'riddle', 'vocabulary'].includes(s.type)) {
+      currentSceneId = s.id;
+      currentDialogueIdx = 0;
+      saveProgress();
+      renderScene();
+      return;
+    }
+  }
+
+  // If no more minigames, go to ending if it exists
+  const ending = scenes.find(s => s.type === 'ending');
+  if (ending) {
+    currentSceneId = ending.id;
+    currentDialogueIdx = 0;
+    saveProgress();
+    renderScene();
+  } else {
+    alert("No more minigames found!");
+    closeVN();
   }
 }
